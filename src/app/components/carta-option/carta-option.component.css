@@ -1,0 +1,27 @@
+.card {
+  padding: 1em;
+  border: 1px solid rgb(223, 219, 219);
+  background-color: black; 
+  color: gold;
+  border-radius: 7px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.card:focus {
+  border-color: #e01c8e;
+  outline: none;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+:host {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  justify-content: center;
+}

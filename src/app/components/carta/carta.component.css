@@ -1,0 +1,39 @@
+.card {
+  width: 7em;
+  height: 9em;
+  border: 1px solid rgb(223, 219, 219);
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(73, 68, 68)); /* Fundo com gradiente de vermelho escuro para laranja */
+  color: gold; /* Cor do texto dourado */
+  border-radius: 7px;
+  flex-shrink: 1;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+:host {
+  display: flex;
+  gap: 1em;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.naipe {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  margin-top: 0.0em; 
+  font-size: 80px; 
+  font-weight: bold;
+  line-height: 1; 
+}
+
+
+.caracter {
+  display: flex;
+  width: 100%;
+  margin: 0.5em 0 0 0.5em;
+  font-size: 25px;
+}

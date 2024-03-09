@@ -1,0 +1,14 @@
+<section>
+  <app-carta-option  [caracter]="Naipes" (caracterSelecionado)="Carta.naipe = $event"/>
+</section>
+<section>
+  <app-carta-option  [caracter]="Numeros" (caracterSelecionado)="Carta.caracter = $event"/>
+</section>
+<section>
+  <app-carta-option [caracter]="Letras" (caracterSelecionado)="Carta.caracter = $event" />
+</section>
+<section *ngIf="Carta.naipe !== undefined&& Carta.caracter !== undefined">
+  <app-carta [carta]="Carta" />
+</section>
+
+<router-outlet />
